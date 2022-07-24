@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Interactive pricing component</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body class="backgroundImage">
+  <div class="title">
+    <p class="title-text"><img class = "patternCircle" src="images/pattern-circles.svg" alt="">Simple, traffic-based pricing</p>
+    <p class="second-title">Sign-up for our 30-day trial. No credit card required.</p>
+  </div>
+
+
+  <div class="box">
+    <span class='pageview'>100K PAGEVIEWS</span>
+    <p class='cost'>$ 16.00</p>
+    <span class='month'>/ month</span>
+    <div id="move" style="background: linear-gradient(to right, hsl(174, 77%, 80%) 100px, hsl(224, 65%, 95%) 100px);"
+      class="slider">
+    </div>
+    <div class="circle">
+      <img class="icon-sliding" src="images/icon-slider.svg" alt="">
+    </div>
+
+    <div class="billing">Monthly Billing
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slide round"></span>
+      </label>
+      Yearly Billing
+      <span class = "discount">25% discount</span>
+    </div>
+    <hr>
+    <div class = "bottomText">
+     <p class = "benefits"> <img src="images/icon-check.svg" alt="">Unlimited websites</p>
+     <p class = "benefits"><img src="images/icon-check.svg" alt="">100% data ownership</p>
+     <p class = "benefits"> <img src="images/icon-check.svg" alt="">Email reports</p>
+    </div>
+
+    <button type = "button">Start my trial</button>
+
+
+  </div>
+
+
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>

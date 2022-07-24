@@ -1,0 +1,236 @@
+/************************************** HTML Tag ****************************************/
+body{
+  margin: 0;
+  background-color: hsl(230, 100%, 99%);
+  font-family: 'Manrope', sans-serif;
+}
+
+
+
+hr{
+  background-color: hsl(224, 65%, 95%);
+  position: absolute;
+  width: 500px;
+  height: 1px;
+  top: 220px;
+  border: 0px;
+  
+ } 
+
+ button{
+  height: 35px;
+  width: 150px;
+  border-radius: 100px;
+  font-family: 'Manrope', sans-serif;
+   background-color: hsl(227, 35%, 25%);
+  color: white;
+  position: absolute;
+  top: 270px;
+  left: 300px;
+  
+ }
+
+
+
+
+/*********************************** class ******************************************/
+.backgroundImage{
+  background-image: url("images/bg-pattern.svg");
+  background-size: 100% 230%;
+  background-repeat: no-repeat;
+}
+
+.patternCircle{
+  position: absolute;
+  top:60px;
+  right: 45%;
+
+  z-index: -1;
+}
+
+.title{
+  margin-top: 100px;
+}
+
+.title-text{
+  font-weight: 800;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 3px;
+}
+
+
+.second-title{
+  font-weight: 600;
+  font-size: 13px;
+  text-align: center;
+}
+
+.box{
+  height: 350px;
+  width: 500px;
+  display: inline-block;
+  background-color: hsl(0, 0%, 100%);
+  position:absolute;
+  top:35%;
+  left:34%;
+  border-radius:5px;
+}
+
+.pageview{
+ position: relative;
+ color: hsl(225, 20%, 60%);
+ font-size: 13px;
+top: 55px;
+left: 50px;
+margin-bottom: 50px;
+ letter-spacing: 1px;
+}
+
+
+.cost{
+  font-weight: 800;
+  position: absolute;
+  right: 22%;
+  top: 0%;
+  font-size: 35px;
+  letter-spacing: -1px;
+}
+
+.month{
+  position: absolute;
+  right: 9%;
+  top: 13%;
+}
+
+.slider{
+  height: 5px;
+  width: 400px;
+  position: absolute;
+  padding: 0;
+  top: 35%;
+  right: 10%;
+  border-radius: 15px;
+  z-index:0.5;
+}
+
+.circle{
+  cursor: grab;
+  height: 40px;
+  width: 40px;
+  background-color: hsl(174, 86%, 45%);
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: 30%;
+  z-index: 0.8;
+  box-shadow: 0px 20px 50px -2px hsl(174, 86%, 45%);
+}
+
+
+.icon-sliding{
+  z-index: 1;
+ position: absolute;
+ top: 32%;
+ right: 24%;
+
+}
+
+.billing{
+  font-size: 12px;
+  display: inline-block;
+  position: absolute;
+  top: 170px;
+  left: 130px;
+  color: hsl(225, 20%, 60%);
+  
+}
+
+.switch {
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slide {
+  width: 45px;
+  height:24px;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 95px;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  margin-right: 10px;
+}
+
+.slide:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 4px;
+  bottom: 4.5px;
+  background-color: white;
+  transition: .4s;
+}
+
+
+input:checked + .slide{
+  background-color:  hsl(174, 77%, 80%);
+}
+
+input:focus + .slide{
+  box-shadow: 0 0 1px hsl(174, 77%, 80%);
+}
+
+input:checked + .slide:before {
+  transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slide.round {
+  border-radius: 34px;
+}
+
+.slide.round:before {
+  border-radius: 50%;
+}
+
+.discount{
+  margin-left: 10px;
+  background-color: hsl(14, 92%, 95%);
+  color: hsl(15, 100%, 70%);
+  font-weight: bold;
+}
+
+.benefits{
+  font-size: 10px;
+}
+
+.benefits > img{
+  margin-right: 10px;
+}
+
+
+.bottomText{
+  position: absolute;
+  top: 220px;
+  margin-top: 25px;
+ margin-left: 50px;
+}
+
+@media(max-width: 1024px){
+ .box{
+  
+ }
+}
